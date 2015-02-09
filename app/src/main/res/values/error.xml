@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="log_in_error">Username and Password doesn\'t match.</string>
+    <string name="invalid_email">Invalid Email address.</string>
+    <string name="no_internet">No internet connection available.</string>
+    <string name="connection_error">Error in connection, please try again later.</string>
+</resources>

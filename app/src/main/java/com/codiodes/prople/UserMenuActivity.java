@@ -1,36 +1,24 @@
 package com.codiodes.prople;
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.codiodes.prople.Helper.Constants;
 
 
-public class MainActivity extends ActionBarActivity {
+public class UserMenuActivity extends ActionBarActivity {
 
-    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        if (isLoggedIn()) {
-            intent = new Intent(this, UserMenuActivity.class);
-        } else {
-            intent = new Intent(this, LogInActivity.class);
-        }
-        startActivity(intent);
+        setContentView(R.layout.activity_user_menu);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_user_menu, menu);
         return true;
     }
 
@@ -47,15 +35,5 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    // Checks if the user is already logged in or not.
-    private boolean isLoggedIn() {
-        SharedPreferences preferences = getSharedPreferences(Constants.PROP_PREFS, Context.MODE_PRIVATE);
-
-        if(preferences.contains(Constants.PREF_USERNAME) && preferences.contains(Constants.PREF_PASSWORD)) {
-            return true;
-        } else {
-            return false;
-        }
     }
 }
