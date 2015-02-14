@@ -17,13 +17,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        if (isLoggedIn()) {
-            intent = new Intent(this, UserMenuActivity.class);
-        } else {
-            intent = new Intent(this, LogInActivity.class);
-        }
-        startActivity(intent);
     }
 
 
@@ -47,15 +40,5 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    // Checks if the user is already logged in or not.
-    private boolean isLoggedIn() {
-        SharedPreferences preferences = getSharedPreferences(Constants.PROP_PREFS, Context.MODE_PRIVATE);
-
-        if(preferences.contains(Constants.PREF_USERNAME) && preferences.contains(Constants.PREF_PASSWORD)) {
-            return true;
-        } else {
-            return false;
-        }
     }
 }
