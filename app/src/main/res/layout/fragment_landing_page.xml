@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dip"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dip"
+        android:weightSum="2">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="BUY"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_right="fa-arrow-circle-right"
+            bootstrap:bb_type="success"
+            android:layout_weight="1"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="SELL"
+            bootstrap:bb_roundedCorners="true"
+            bootstrap:bb_icon_right="fa-arrow-circle-right"
+            bootstrap:bb_type="success"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dip"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="RENT"
+            bootstrap:bb_icon_right="fa-arrow-circle-right"
+            bootstrap:bb_type="success"
+            bootstrap:bb_roundedCorners="true"
+            android:layout_weight="1"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="LISTINGS"
+            bootstrap:bb_icon_right="fa-arrow-circle-right"
+            bootstrap:bb_type="success"
+            bootstrap:bb_roundedCorners="true"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

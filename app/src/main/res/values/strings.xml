@@ -12,9 +12,54 @@
     <string name="sign_in">Sign In</string>
     <string name="register">Register</string>
     <string name="title_activity_landing_page">Prople</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">BUY</string>
+    <string name="title_section2">SELL</string>
+    <string name="title_section3">RENT</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_property">Search Property</string>
+    <string name="property_type">Property Type</string>
+    <string name="no_of_bedroom">No of Bedroom</string>
+    <string name="no_of_bathroom">No of Bathroom</string>
+    <string name="location">Location</string>
+    <string name="area">Area</string>
+    <string name="SqFt">Sq Ft.</string>
+    <string name="Rs">\u20B9</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6151727981200131/4761258559</string>
 
+    <string-array name="residential_property_type">
+        <item>Flats</item>
+        <item>Independent builder floor</item>
+        <item>Row house/ Bungalow</item>
+        <item>Farm house</item>
+        <item>Agricultural farm/ land</item>
+        <item>Plots</item>
+    </string-array>
+
+    <string-array name="property_type">
+        <item>Residential</item>
+        <item>Commercial</item>
+    </string-array>
+
+    <string-array name="owner_type">
+        <item>Ownership</item>
+        <item>Landlordship</item>
+    </string-array>
+
+    <string-array name="possession_type">
+        <item>Ready</item>
+        <item>Under Construction</item>
+    </string-array>
+    
+    <string-array name="no_of_bedroom">
+        <item>1 RK</item>
+        <item>1 BHK</item>
+        <item>1 1/2 BHK</item>
+        <item>2 BHK</item>
+        <item>2 1/2 BHK</item>
+        <item>3 BHK</item>
+        <item>3 1/2 BHK</item>
+        <item>4 BHK</item>
+        <item>5 BHK</item>
+        <item>6 BHK</item>
+    </string-array>
 </resources>
