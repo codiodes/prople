@@ -1,5 +1,6 @@
 package com.codiodes.prople;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -63,5 +64,34 @@ public class LandingPage extends ActionBarActivity {
             View rootView = inflater.inflate(R.layout.fragment_landing_page, container, false);
             return rootView;
         }
+
+    }
+
+    //  Event Listener of Buy Button.
+    public void onClickBtnBuy(View v)
+    {
+        Intent i = new Intent(this, BuyActivity.class);
+        startActivity(i);
+    }
+
+    //  Event Listener of Sell Button.
+    public void onClickBtnSell(View v)
+    {
+        Intent i = new Intent(this, SellActivity.class);
+        startActivity(i);
+    }
+
+    //  Event Listener of Rent Button.
+    public void onClickBtnRent(View v)
+    {
+        Intent i = new Intent(this, RentActivity.class);
+        startActivity(i);
+    }
+
+    //  Event Listener of Rent Button.
+    public void onClickBtnListings(View v)
+    {
+        Intent i = new Intent(this, RentActivity.class);
+        startActivity(i);
     }
 }

@@ -11,10 +11,9 @@
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
     <string name="register">Register</string>
-    <string name="title_activity_landing_page">Prople</string>
-    <string name="title_section1">BUY</string>
-    <string name="title_section2">SELL</string>
-    <string name="title_section3">RENT</string>
+    <string name="property_type_residential">Residential</string>
+    <string name="property_type_commercial">Commercial</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search_property">Search Property</string>
     <string name="property_type">Property Type</string>
@@ -62,4 +61,20 @@
         <item>5 BHK</item>
         <item>6 BHK</item>
     </string-array>
+    <string name="title_activity_buy">Buy Property</string>
+    <string name="title_activity_sell">Sell Property</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="home">Home</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="title_activity_rent">Rent Property</string>
+    <string name="title_activity_main_user_page">Prople</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_listing">Listings</string>
 </resources>

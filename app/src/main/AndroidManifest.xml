@@ -2,22 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.codiodes.prople" >
 
-    <!-- Include required permissions for Google Mobile Ads to run-->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Include required permissions for Google Mobile Ads to run -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <!--This meta-data tag is required to use Google Play Services.-->
-        <meta-data android:name="com.google.android.gms.version"
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,12 +33,36 @@
         </activity>
         <activity
             android:name=".LandingPage"
-            android:label="@string/title_activity_landing_page" >
+            android:label="@string/app_name" >
         </activity>
-        <!--Include the AdActivity configChanges and theme. -->
-        <activity android:name="com.google.android.gms.ads.AdActivity"
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".BuyActivity"
+            android:label="@string/title_activity_buy"
+            android:parentActivityName=".MainUserPage" >
+        </activity>
+        <activity
+            android:name=".SellActivity"
+            android:label="@string/title_activity_sell"
+            android:parentActivityName=".MainUserPage" >
+        </activity>
+        <activity
+            android:name=".RentActivity"
+            android:label="@string/title_activity_rent"
+            android:parentActivityName=".MainUserPage" >
+        </activity>
+        <activity
+            android:name=".MainUserPage"
+            android:label="@string/title_activity_main_user_page" >
+        </activity>
+        <activity
+            android:name=".ListingActivity"
+            android:label="@string/title_activity_listing" >
+        </activity>
     </application>
 
 </manifest>
